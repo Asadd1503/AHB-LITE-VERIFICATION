@@ -1,0 +1,80 @@
+# vsim tb_top -l simple_read_word_log.txt -voptargs=""+acc"" 
+# Start time: 21:49:31 on May 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ahb3lite_pkg(fast)
+# Loading work.tb_top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading work.if_ahb_sv_unit(fast)
+# Loading work.if_ahb(fast__2)
+# Loading work.ahb3lite_slave(fast)
+# Loading work.mem(fast)
+# Loading work.ahb_lite_tb_sv_unit(fast)
+# Loading work.ahb_lite_tb(fast)
+# Loading work.if_ahb(fast)
+add wave -group "Interface" /tb_top/if_ahb_inst/*
+run -all
+# [Time: 6], pending_tx: 0, pending_write: x, pending_addr: x, pending_size: xxx, expected_data: x
+# [Time: 16], pending_tx: 0, pending_write: x, pending_addr: x, pending_size: xxx, expected_data: x
+# [Time: 26], pending_tx: 1, pending_write: 1, pending_addr: 0, pending_size: 010, expected_data: x
+# [Time : 35] [INFO]: Write transaction at address 0000 with data deadbeef and byte enable 1111
+# [Time: 36], pending_tx: 0, pending_write: 1, pending_addr: 0, pending_size: 010, expected_data: x
+# [Time: 46], pending_tx: 0, pending_write: 1, pending_addr: 0, pending_size: 010, expected_data: x
+# [Time: 56], pending_tx: 1, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: x
+# [Time: 66], pending_tx: 1, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: x
+# ** Note: $stop    : ../ahb_lite_tb.sv(138)
+#    Time: 75 ns  Iteration: 2  Instance: /tb_top/ahb_lite_tb_inst
+# Break in Module ahb_lite_tb at ../ahb_lite_tb.sv line 138
+run
+# [Time : 75] [INFO]: Read transaction at address 0000 with expected data deadbeef and received data deadbeef and byte enable 1111
+# [PASS]: Data match at address 0000: expected ef, got ef
+# [PASS]: Data match at address 0000: expected be, got be
+# [PASS]: Data match at address 0000: expected ad, got ad
+# [PASS]: Data match at address 0000: expected de, got de
+# [Time: 76], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 86], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 96], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 106], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 116], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 126], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 136], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 146], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 156], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+# [Time: 166], pending_tx: 0, pending_write: 0, pending_addr: 0, pending_size: 010, expected_data: deadbeef
+quit -sim
+# End time: 22:02:57 on May 03,2026, Elapsed time: 0:13:26
+# Errors: 0, Warnings: 2
+vlog -sv ../ahb3lite_pkg.sv ../if_ahb.sv ../mem.sv ../ahb3lite_slave.sv ../ahb_lite_tb.sv ../tb_top.sv
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 22:03:03 on May 03,2026
+# vlog -reportprogress 300 -sv ../ahb3lite_pkg.sv ../if_ahb.sv ../mem.sv ../ahb3lite_slave.sv ../ahb_lite_tb.sv ../tb_top.sv 
+# -- Compiling package ahb3lite_pkg
+# ** Error (suppressible): ../if_ahb.sv(217): (vlog-2244) Variable 'flag' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# End time: 22:03:04 on May 03,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/questasim64_2024.1/win64/vlog failed.
+vlog -sv ../ahb3lite_pkg.sv ../if_ahb.sv ../mem.sv ../ahb3lite_slave.sv ../ahb_lite_tb.sv ../tb_top.sv
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 22:03:33 on May 03,2026
+# vlog -reportprogress 300 -sv ../ahb3lite_pkg.sv ../if_ahb.sv ../mem.sv ../ahb3lite_slave.sv ../ahb_lite_tb.sv ../tb_top.sv 
+# -- Compiling package ahb3lite_pkg
+# -- Compiling package if_ahb_sv_unit
+# -- Importing package ahb3lite_pkg
+# -- Compiling interface if_ahb
+# -- Compiling module mem
+# -- Compiling module ahb3lite_slave
+# -- Compiling package ahb_lite_tb_sv_unit
+# -- Compiling module ahb_lite_tb
+# -- Compiling package tb_top_sv_unit
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 22:03:33 on May 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_top -l burst_INCR4_log.txt -voptargs="+acc"

@@ -1,0 +1,233 @@
+# vsim tb_top -l burst_INCR16_log.txt -voptargs=""+acc"" 
+# Start time: 22:39:03 on May 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ahb3lite_pkg(fast)
+# Loading work.tb_top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading work.if_ahb_sv_unit(fast)
+# Loading work.if_ahb(fast__2)
+# Loading work.ahb3lite_slave(fast)
+# Loading work.mem(fast)
+# Loading work.ahb_lite_tb_sv_unit(fast)
+# Loading work.ahb_lite_tb(fast)
+# Loading work.if_ahb(fast)
+run -all
+# [Time: 6], pending_tx: 0, pending_write: x, pending_addr: x, pending_size: xxx, expected_data: x
+# [Time: 16], pending_tx: 0, pending_write: x, pending_addr: x, pending_size: xxx, expected_data: x
+# [Time: 26], pending_tx: 1, pending_write: 1, pending_addr: 10, pending_size: 010, expected_data: x
+# [Time : 35] [INFO]: Write transaction at address 0010 with data aaaabbbb and byte enable 1111
+# [Time: 36], pending_tx: 1, pending_write: 1, pending_addr: 14, pending_size: 010, expected_data: x
+# [Time : 45] [INFO]: Write transaction at address 0014 with data ccccdddd and byte enable 1111
+# [Time: 46], pending_tx: 1, pending_write: 1, pending_addr: 18, pending_size: 010, expected_data: x
+# [Time : 55] [INFO]: Write transaction at address 0018 with data eeeeffff and byte enable 1111
+# [Time: 56], pending_tx: 1, pending_write: 1, pending_addr: 1c, pending_size: 010, expected_data: x
+# [Time : 65] [INFO]: Write transaction at address 001c with data 11112222 and byte enable 1111
+# [Time: 66], pending_tx: 1, pending_write: 1, pending_addr: 20, pending_size: 010, expected_data: x
+# [Time : 75] [INFO]: Write transaction at address 0020 with data 55556666 and byte enable 1111
+# [Time: 76], pending_tx: 1, pending_write: 1, pending_addr: 24, pending_size: 010, expected_data: x
+# [Time : 85] [INFO]: Write transaction at address 0024 with data 77778888 and byte enable 1111
+# [Time: 86], pending_tx: 1, pending_write: 1, pending_addr: 28, pending_size: 010, expected_data: x
+# [Time : 95] [INFO]: Write transaction at address 0028 with data 9999aaaa and byte enable 1111
+# [Time: 96], pending_tx: 1, pending_write: 1, pending_addr: 2c, pending_size: 010, expected_data: x
+# [Time : 105] [INFO]: Write transaction at address 002c with data bbbbcccc and byte enable 1111
+# [Time: 106], pending_tx: 1, pending_write: 1, pending_addr: 30, pending_size: 010, expected_data: x
+# [Time : 115] [INFO]: Write transaction at address 0030 with data ddddeeee and byte enable 1111
+# [Time: 116], pending_tx: 1, pending_write: 1, pending_addr: 34, pending_size: 010, expected_data: x
+# [Time : 125] [INFO]: Write transaction at address 0034 with data ffff1111 and byte enable 1111
+# [Time: 126], pending_tx: 1, pending_write: 1, pending_addr: 38, pending_size: 010, expected_data: x
+# [Time : 135] [INFO]: Write transaction at address 0038 with data 22225555 and byte enable 1111
+# [Time: 136], pending_tx: 1, pending_write: 1, pending_addr: 3c, pending_size: 010, expected_data: x
+# [Time : 145] [INFO]: Write transaction at address 003c with data 66667777 and byte enable 1111
+# [Time: 146], pending_tx: 1, pending_write: 1, pending_addr: 40, pending_size: 010, expected_data: x
+# [Time : 155] [INFO]: Write transaction at address 0040 with data 88889999 and byte enable 1111
+# [Time: 156], pending_tx: 1, pending_write: 1, pending_addr: 44, pending_size: 010, expected_data: x
+# [Time : 165] [INFO]: Write transaction at address 0044 with data aaaabbbb and byte enable 1111
+# [Time: 166], pending_tx: 1, pending_write: 1, pending_addr: 48, pending_size: 010, expected_data: x
+# [Time : 175] [INFO]: Write transaction at address 0048 with data ccccdddd and byte enable 1111
+# [Time: 176], pending_tx: 1, pending_write: 1, pending_addr: 4c, pending_size: 010, expected_data: x
+# [Time : 185] [INFO]: Write transaction at address 004c with data eeeeffff and byte enable 1111
+# [Time: 186], pending_tx: 0, pending_write: 1, pending_addr: 4c, pending_size: 010, expected_data: x
+# [Time: 196], pending_tx: 0, pending_write: 1, pending_addr: 4c, pending_size: 010, expected_data: x
+# [Time: 206], pending_tx: 1, pending_write: 0, pending_addr: 10, pending_size: 010, expected_data: x
+# [Time: 216], pending_tx: 1, pending_write: 0, pending_addr: 10, pending_size: 010, expected_data: x
+# [Time : 225] [INFO]: Read transaction at address 0010 with expected data aaaabbbb and received data eeeeffff and byte enable 1111
+# ** Warning: Data mismatch at address 0010: expected bb, got ff
+#    Time: 225 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0010: expected bb, got ff
+#    Time: 225 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0010: expected aa, got ee
+#    Time: 225 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0010: expected aa, got ee
+#    Time: 225 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 226], pending_tx: 1, pending_write: 0, pending_addr: 14, pending_size: 010, expected_data: aaaabbbb
+# [Time : 235] [INFO]: Read transaction at address 0014 with expected data ccccdddd and received data aaaabbbb and byte enable 1111
+# ** Warning: Data mismatch at address 0014: expected dd, got bb
+#    Time: 235 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0014: expected dd, got bb
+#    Time: 235 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0014: expected cc, got aa
+#    Time: 235 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0014: expected cc, got aa
+#    Time: 235 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 236], pending_tx: 1, pending_write: 0, pending_addr: 18, pending_size: 010, expected_data: ccccdddd
+# [Time : 245] [INFO]: Read transaction at address 0018 with expected data eeeeffff and received data aaaabbbb and byte enable 1111
+# ** Warning: Data mismatch at address 0018: expected ff, got bb
+#    Time: 245 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0018: expected ff, got bb
+#    Time: 245 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0018: expected ee, got aa
+#    Time: 245 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0018: expected ee, got aa
+#    Time: 245 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 246], pending_tx: 1, pending_write: 0, pending_addr: 1c, pending_size: 010, expected_data: eeeeffff
+# [Time : 255] [INFO]: Read transaction at address 001c with expected data 11112222 and received data ccccdddd and byte enable 1111
+# ** Warning: Data mismatch at address 001c: expected 22, got dd
+#    Time: 255 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 001c: expected 22, got dd
+#    Time: 255 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 001c: expected 11, got cc
+#    Time: 255 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 001c: expected 11, got cc
+#    Time: 255 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 256], pending_tx: 1, pending_write: 0, pending_addr: 20, pending_size: 010, expected_data: 11112222
+# [Time : 265] [INFO]: Read transaction at address 0020 with expected data 55556666 and received data eeeeffff and byte enable 1111
+# ** Warning: Data mismatch at address 0020: expected 66, got ff
+#    Time: 265 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0020: expected 66, got ff
+#    Time: 265 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0020: expected 55, got ee
+#    Time: 265 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0020: expected 55, got ee
+#    Time: 265 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 266], pending_tx: 1, pending_write: 0, pending_addr: 24, pending_size: 010, expected_data: 55556666
+# [Time : 275] [INFO]: Read transaction at address 0024 with expected data 77778888 and received data 11112222 and byte enable 1111
+# ** Warning: Data mismatch at address 0024: expected 88, got 22
+#    Time: 275 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0024: expected 88, got 22
+#    Time: 275 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0024: expected 77, got 11
+#    Time: 275 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0024: expected 77, got 11
+#    Time: 275 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 276], pending_tx: 1, pending_write: 0, pending_addr: 28, pending_size: 010, expected_data: 77778888
+# [Time : 285] [INFO]: Read transaction at address 0028 with expected data 9999aaaa and received data 55556666 and byte enable 1111
+# ** Warning: Data mismatch at address 0028: expected aa, got 66
+#    Time: 285 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0028: expected aa, got 66
+#    Time: 285 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0028: expected 99, got 55
+#    Time: 285 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0028: expected 99, got 55
+#    Time: 285 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 286], pending_tx: 1, pending_write: 0, pending_addr: 2c, pending_size: 010, expected_data: 9999aaaa
+# [Time : 295] [INFO]: Read transaction at address 002c with expected data bbbbcccc and received data 77778888 and byte enable 1111
+# ** Warning: Data mismatch at address 002c: expected cc, got 88
+#    Time: 295 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 002c: expected cc, got 88
+#    Time: 295 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 002c: expected bb, got 77
+#    Time: 295 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 002c: expected bb, got 77
+#    Time: 295 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 296], pending_tx: 1, pending_write: 0, pending_addr: 30, pending_size: 010, expected_data: bbbbcccc
+# [Time : 305] [INFO]: Read transaction at address 0030 with expected data ddddeeee and received data 9999aaaa and byte enable 1111
+# ** Warning: Data mismatch at address 0030: expected ee, got aa
+#    Time: 305 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0030: expected ee, got aa
+#    Time: 305 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0030: expected dd, got 99
+#    Time: 305 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0030: expected dd, got 99
+#    Time: 305 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 306], pending_tx: 1, pending_write: 0, pending_addr: 34, pending_size: 010, expected_data: ddddeeee
+# [Time : 315] [INFO]: Read transaction at address 0034 with expected data ffff1111 and received data bbbbcccc and byte enable 1111
+# ** Warning: Data mismatch at address 0034: expected 11, got cc
+#    Time: 315 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0034: expected 11, got cc
+#    Time: 315 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0034: expected ff, got bb
+#    Time: 315 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0034: expected ff, got bb
+#    Time: 315 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 316], pending_tx: 1, pending_write: 0, pending_addr: 38, pending_size: 010, expected_data: ffff1111
+# [Time : 325] [INFO]: Read transaction at address 0038 with expected data 22225555 and received data ddddeeee and byte enable 1111
+# ** Warning: Data mismatch at address 0038: expected 55, got ee
+#    Time: 325 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0038: expected 55, got ee
+#    Time: 325 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0038: expected 22, got dd
+#    Time: 325 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0038: expected 22, got dd
+#    Time: 325 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 326], pending_tx: 1, pending_write: 0, pending_addr: 3c, pending_size: 010, expected_data: 22225555
+# [Time : 335] [INFO]: Read transaction at address 003c with expected data 66667777 and received data ffff1111 and byte enable 1111
+# ** Warning: Data mismatch at address 003c: expected 77, got 11
+#    Time: 335 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 003c: expected 77, got 11
+#    Time: 335 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 003c: expected 66, got ff
+#    Time: 335 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 003c: expected 66, got ff
+#    Time: 335 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 336], pending_tx: 1, pending_write: 0, pending_addr: 40, pending_size: 010, expected_data: 66667777
+# [Time : 345] [INFO]: Read transaction at address 0040 with expected data 88889999 and received data 22225555 and byte enable 1111
+# ** Warning: Data mismatch at address 0040: expected 99, got 55
+#    Time: 345 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0040: expected 99, got 55
+#    Time: 345 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0040: expected 88, got 22
+#    Time: 345 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0040: expected 88, got 22
+#    Time: 345 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 346], pending_tx: 1, pending_write: 0, pending_addr: 44, pending_size: 010, expected_data: 88889999
+# [Time : 355] [INFO]: Read transaction at address 0044 with expected data aaaabbbb and received data 66667777 and byte enable 1111
+# ** Warning: Data mismatch at address 0044: expected bb, got 77
+#    Time: 355 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0044: expected bb, got 77
+#    Time: 355 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0044: expected aa, got 66
+#    Time: 355 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0044: expected aa, got 66
+#    Time: 355 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 356], pending_tx: 1, pending_write: 0, pending_addr: 48, pending_size: 010, expected_data: aaaabbbb
+# [Time : 365] [INFO]: Read transaction at address 0048 with expected data ccccdddd and received data 88889999 and byte enable 1111
+# ** Warning: Data mismatch at address 0048: expected dd, got 99
+#    Time: 365 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0048: expected dd, got 99
+#    Time: 365 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0048: expected cc, got 88
+#    Time: 365 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# ** Warning: Data mismatch at address 0048: expected cc, got 88
+#    Time: 365 ns  Scope: tb_top_sv_unit.scoreboard.run File: ../scoreboard.sv Line: 100
+# [Time: 366], pending_tx: 1, pending_write: 0, pending_addr: 4c, pending_size: 010, expected_data: ccccdddd
+# ** Note: $stop    : ../ahb_lite_tb.sv(138)
+#    Time: 375 ns  Iteration: 3  Instance: /tb_top/ahb_lite_tb_inst
+# Break in Module ahb_lite_tb at ../ahb_lite_tb.sv line 138
+quit -sim
+# End time: 22:40:39 on May 03,2026, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 62
+vlog -sv ../ahb3lite_pkg.sv ../if_ahb.sv ../mem.sv ../ahb3lite_slave.sv ../ahb_lite_tb.sv ../tb_top.sv
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 22:40:43 on May 03,2026
+# vlog -reportprogress 300 -sv ../ahb3lite_pkg.sv ../if_ahb.sv ../mem.sv ../ahb3lite_slave.sv ../ahb_lite_tb.sv ../tb_top.sv 
+# -- Compiling package ahb3lite_pkg
+# -- Compiling package if_ahb_sv_unit
+# -- Importing package ahb3lite_pkg
+# -- Compiling interface if_ahb
+# -- Compiling module mem
+# -- Compiling module ahb3lite_slave
+# -- Compiling package ahb_lite_tb_sv_unit
+# -- Compiling module ahb_lite_tb
+# -- Compiling package tb_top_sv_unit
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 22:40:43 on May 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_top -l burst_WRAP4_log.txt -voptargs="+acc"
