@@ -1,0 +1,11 @@
+clear -all
+
+analyze -sv09 ahb3lite_pkg.sv design.sv mem.sv ahb_checker.sv ahb_assumptions.sv bind_fpv.sv
+
+elaborate -top ahb3liten -bbox_a 10000
+
+clock HCLK
+
+reset ~HRESETn
+
+prove -all

@@ -1,0 +1,24 @@
+
+==============================================================
+SUMMARY
+==============================================================
+    Total Tasks           : 1
+    Total Properties      : 63
+          assumptions     : 16                  
+           - approved     : 0                   ( 0.0% )
+           - temporary    : 16                  ( 100.0% )
+          assertions      : 15                  
+           - proven       : 11                  ( 73.3% )
+           - marked_proven: 0                   ( 0.0% )
+           - cex          : 4                   ( 26.7% )
+           - ar_cex       : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+          covers          : 32                  
+           - unreachable  : 3                   ( 9.4% )
+           - covered      : 29                  ( 90.6% )
+           - ar_covered   : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )

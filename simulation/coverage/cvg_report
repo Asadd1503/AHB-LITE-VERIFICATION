@@ -1,0 +1,214 @@
+
+# =================================================================================
+# === Instance: /tb_top_sv_unit
+# === Design Unit: work.tb_top_sv_unit
+# =================================================================================
+# 
+# Covergroup Coverage:
+#     Covergroups                      1        na        na    95.00%
+#         Coverpoints/Crosses         10        na        na        na
+#             Covergroup Bins         47        43         4    91.48%
+# ----------------------------------------------------------------------------------------------------------
+# COVERGROUP COVERAGE:
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /tb_top_sv_unit/ahb_coverage/cg_ahb              95.00%        100          -    Uncovered            
+#     covered/total bins:                                    43         47          -                      
+#     missing/total bins:                                     4         47          -                      
+#     % Hit:                                             91.48%        100          -                      
+#     Coverpoint cp_htrans                               75.00%        100          -    Uncovered            
+#         covered/total bins:                                 3          4          -                      
+#         missing/total bins:                                 1          4          -                      
+#         % Hit:                                         75.00%        100          -                      
+#         bin idle                                         4195          1          -    Covered              
+#         bin busy                                            0          1          -    ZERO                 
+#         bin nonseq                                       2000          1          -    Covered              
+#         bin seq                                         14362          1          -    Covered              
+#     Coverpoint cp_hburst                               87.50%        100          -    Uncovered            
+#         covered/total bins:                                 7          8          -                      
+#         missing/total bins:                                 1          8          -                      
+#         % Hit:                                         87.50%        100          -                      
+#         bin single                                       1359          1          -    Covered              
+#         bin incr                                            0          1          -    ZERO                 
+#         bin wrap4                                        1911          1          -    Covered              
+#         bin incr4                                        1677          1          -    Covered              
+#         bin wrap8                                        2688          1          -    Covered              
+#         bin incr8                                        2562          1          -    Covered              
+#         bin wrap16                                       5550          1          -    Covered              
+#         bin incr16                                       4810          1          -    Covered              
+#     Coverpoint cp_hsize                               100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         ignore_bin unsupported_sizes                        0                     -    ZERO                 
+#         bin byte_size                                   13786          1          -    Covered              
+#         bin halfword_size                                4137          1          -    Covered              
+#         bin word_size                                    2634          1          -    Covered              
+#     Coverpoint cp_hwrite                              100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read                                        10777          1          -    Covered              
+#         bin write                                        9778          1          -    Covered              
+#     Coverpoint cp_hready                              100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin ready_0                                      1000          1          -    Covered              
+#         bin ready_1                                     19558          1          -    Covered              
+#     Coverpoint cp_hresp                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         ignore_bin error                                    0                     -    ZERO                 
+#         bin okay                                        20558          1          -    Covered              
+#     Coverpoint cp_haddr                               100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin region_1_outof_4                             4685          1          -    Covered              
+#         bin region_2_outof_4                             5260          1          -    Covered              
+#         bin region_3_outof_4                             5257          1          -    Covered              
+#         bin region_4_outof_4                             5353          1          -    Covered              
+#     Cross cx_hburst_hwrite                             87.50%        100          -    Uncovered            
+#         covered/total bins:                                14         16          -                      
+#         missing/total bins:                                 2         16          -                      
+#         % Hit:                                         87.50%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin single_read                               775          1          -    Covered              
+#             bin single_write                              582          1          -    Covered              
+#             bin incr_read                                   0          1          -    ZERO                 
+#             bin incr_write                                  0          1          -    ZERO                 
+#             bin wrap4_write                               882          1          -    Covered              
+#             bin wrap4_read                               1029          1          -    Covered              
+#             bin incr4_write                               774          1          -    Covered              
+#             bin incr4_read                                903          1          -    Covered              
+#             bin wrap8_write                              1280          1          -    Covered              
+#             bin wrap8_read                               1408          1          -    Covered              
+#             bin incr8_write                              1220          1          -    Covered              
+#             bin incr8_read                               1342          1          -    Covered              
+#             bin wrap16_write                             2700          1          -    Covered              
+#             bin wrap16_read                              2850          1          -    Covered              
+#             bin incr16_write                             2340          1          -    Covered              
+#             bin incr16_read                              2470          1          -    Covered              
+#     Cross cx_size_write                               100.00%        100          -    Covered              
+#         covered/total bins:                                 6          6          -                      
+#         missing/total bins:                                 0          6          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin byte_read                                7220          1          -    Covered              
+#             bin byte_write                               6566          1          -    Covered              
+#             bin halfword_read                            2178          1          -    Covered              
+#             bin halfword_write                           1959          1          -    Covered              
+#             bin word_read                                1379          1          -    Covered              
+#             bin word_write                               1253          1          -    Covered              
+#     Cross cx_htrans_hready                            100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin seq_stalled                               806          1          -    Covered              
+#  Covergroup instance \/tb_top_sv_unit::ahb_coverage::cg_ahb  
+#                                                        95.00%        100          -    Uncovered            
+#     covered/total bins:                                    43         47          -                      
+#     missing/total bins:                                     4         47          -                      
+#     % Hit:                                             91.48%        100          -                      
+#     Coverpoint cp_htrans                               75.00%        100          -    Uncovered            
+#         covered/total bins:                                 3          4          -                      
+#         missing/total bins:                                 1          4          -                      
+#         % Hit:                                         75.00%        100          -                      
+#         bin idle                                         4195          1          -    Covered              
+#         bin busy                                            0          1          -    ZERO                 
+#         bin nonseq                                       2000          1          -    Covered              
+#         bin seq                                         14362          1          -    Covered              
+#     Coverpoint cp_hburst                               87.50%        100          -    Uncovered            
+#         covered/total bins:                                 7          8          -                      
+#         missing/total bins:                                 1          8          -                      
+#         % Hit:                                         87.50%        100          -                      
+#         bin single                                       1359          1          -    Covered              
+#         bin incr                                            0          1          -    ZERO                 
+#         bin wrap4                                        1911          1          -    Covered              
+#         bin incr4                                        1677          1          -    Covered              
+#         bin wrap8                                        2688          1          -    Covered              
+#         bin incr8                                        2562          1          -    Covered              
+#         bin wrap16                                       5550          1          -    Covered              
+#         bin incr16                                       4810          1          -    Covered              
+#     Coverpoint cp_hsize                               100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         ignore_bin unsupported_sizes                        0                     -    ZERO                 
+#         bin byte_size                                   13786          1          -    Covered              
+#         bin halfword_size                                4137          1          -    Covered              
+#         bin word_size                                    2634          1          -    Covered              
+#     Coverpoint cp_hwrite                              100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read                                        10777          1          -    Covered              
+#         bin write                                        9778          1          -    Covered              
+#     Coverpoint cp_hready                              100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin ready_0                                      1000          1          -    Covered              
+#         bin ready_1                                     19558          1          -    Covered              
+#     Coverpoint cp_hresp                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         ignore_bin error                                    0                     -    ZERO                 
+#         bin okay                                        20558          1          -    Covered              
+#     Coverpoint cp_haddr                               100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin region_1_outof_4                             4685          1          -    Covered              
+#         bin region_2_outof_4                             5260          1          -    Covered              
+#         bin region_3_outof_4                             5257          1          -    Covered              
+#         bin region_4_outof_4                             5353          1          -    Covered              
+#     Cross cx_hburst_hwrite                             87.50%        100          -    Uncovered            
+#         covered/total bins:                                14         16          -                      
+#         missing/total bins:                                 2         16          -                      
+#         % Hit:                                         87.50%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin single_read                               775          1          -    Covered              
+#             bin single_write                              582          1          -    Covered              
+#             bin incr_read                                   0          1          -    ZERO                 
+#             bin incr_write                                  0          1          -    ZERO                 
+#             bin wrap4_write                               882          1          -    Covered              
+#             bin wrap4_read                               1029          1          -    Covered              
+#             bin incr4_write                               774          1          -    Covered              
+#             bin incr4_read                                903          1          -    Covered              
+#             bin wrap8_write                              1280          1          -    Covered              
+#             bin wrap8_read                               1408          1          -    Covered              
+#             bin incr8_write                              1220          1          -    Covered              
+#             bin incr8_read                               1342          1          -    Covered              
+#             bin wrap16_write                             2700          1          -    Covered              
+#             bin wrap16_read                              2850          1          -    Covered              
+#             bin incr16_write                             2340          1          -    Covered              
+#             bin incr16_read                              2470          1          -    Covered              
+#     Cross cx_size_write                               100.00%        100          -    Covered              
+#         covered/total bins:                                 6          6          -                      
+#         missing/total bins:                                 0          6          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin byte_read                                7220          1          -    Covered              
+#             bin byte_write                               6566          1          -    Covered              
+#             bin halfword_read                            2178          1          -    Covered              
+#             bin halfword_write                           1959          1          -    Covered              
+#             bin word_read                                1379          1          -    Covered              
+#             bin word_write                               1253          1          -    Covered              
+#     Cross cx_htrans_hready                            100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin seq_stalled                               806          1          -    Covered              
+# 
+# TOTAL COVERGROUP COVERAGE: 95.00%  COVERGROUP TYPES: 1
+# 
+# Total Coverage By Instance (filtered view): 95.00%
+# 
